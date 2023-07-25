@@ -6,7 +6,7 @@ SELECT DISTINCT
 FROM
   `sold_car_orders`
 WHERE
-  `year` = ${year}
+  `year` = ${year} and `fuel` = ${fuel}
 ORDER BY
   `selling_price` DESC
 LIMIT
